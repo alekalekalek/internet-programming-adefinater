@@ -36,38 +36,34 @@ https://raw.githubusercontent.com/sweko/internet-programming-adefinater/refs/hea
 
 ### Data Format
 
-The API returns an object with an `episodes` array:
+The API returns an object with the episodes. This is an example episode object:
 
 ```javascript
 {
-  "episodes": [
+  "rank": 1,
+  "title": "Blink",
+  "series": 3,
+  "era": "Modern",
+  "broadcast_date": "2007-06-09",
+  "director": "Hettie MacDonald",
+  "writer": "Steven Moffat",
+  "plot": "Sally Sparrow receives a mysterious message...",
+  "doctor": {
+    "actor": "David Tennant",
+    "incarnation": "Tenth Doctor"
+  },
+  "companion": {
+    "actor": "Freema Agyeman",
+    "character": "Martha Jones"
+  },
+  "cast": [
     {
-      "rank": 1,
-      "title": "Blink",
-      "series": 3,
-      "era": "Modern",
-      "broadcast_date": "2007-06-09",
-      "director": "Hettie MacDonald",
-      "writer": "Steven Moffat",
-      "plot": "Sally Sparrow receives a mysterious message...",
-      "doctor": {
-        "actor": "David Tennant",
-        "incarnation": "Tenth Doctor"
-      },
-      "companion": {
-        "actor": "Freema Agyeman",
-        "character": "Martha Jones"
-      },
-      "cast": [
-        {
-          "actor": "Carey Mulligan",
-          "character": "Sally Sparrow"
-        },
-        {
-          "actor": "Michael Obiora",
-          "character": "Billy Shipton"
-        }
-      ]
+      "actor": "Carey Mulligan",
+      "character": "Sally Sparrow"
+    },
+    {
+      "actor": "Michael Obiora",
+      "character": "Billy Shipton"
     }
   ]
 }
@@ -158,6 +154,8 @@ Choose **at least 2** of the following to demonstrate deeper understanding:
 Add filters for:
 - Doctor (dropdown populated from data)
 - Companion (dropdown populated from data)
+- Director (dropdown populated from data)
+- Writer (dropdown populated from data)
 
 #### Option B: Cast Details (5 points)
 When showing cast count, make it interactive:
